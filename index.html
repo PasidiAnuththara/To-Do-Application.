@@ -18,9 +18,6 @@
 
 <body>
     <br>
-    <center>
-        <h2 class="number"><b>GUESSING THE NUMBER</b></h2>
-    </center>
 
     <!-- <div class="ROW"
             <div class="col">
@@ -44,46 +41,30 @@
     <br>
 
     <div class="container">
-        <center>
-            <div class="row">
-                <div class="col">
-                    <div class="row">
-                        <div class="sm:col-6 mb-3 sm:mb-0">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h3 class="card-title">
-                                        <center>Make Your First Guess ! </center>
-                                    </h3>
-                                    <h6 class="card-text">
-                                        <center>Pick a number between 1 and 10.</center>
-                                    </h6>
+        <h2 class="number"><b>GUESSING THE NUMBER</b></h2>
 
-                                    <input id="txtnumber" type="text" placeholder="Enter 1 to 10">
-                                    <input type="button" class="button1" value="Submit guess ==>"
-                                        onclick="guessnumber()">
-                                    <input type="button" class="button2" value="↺" onclick="btntryagain()">
-                                    <!-- <a href="#" class="btn-solid theme-primary">Go somewhere</a> -->
+        <div class="card p-3 shadow-lg mx-auto" style="max-width: 440px; width: 100%;">
+            <div class="card-body text-center">
+                <h3 class="card-title fw-bold text-white mb-2" style="font-size: 22px;">Make Your First Guess !</h3>
+                <p class="card-text text-muted mb-4" style="font-size: 14px;">Pick a number between 1 and 10.</p>
 
-                                    <!-- <div class="mt-3 text-center">
-                                    <p id="message" class="font-weight-bold" style="font-size: 16px;">Hello</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <input id="txtnumber" type="text" placeholder="Enter 1 to 10">
+
+                <div class="d-flex justify-content-center align-items: center mt-3"></div>
+                    <input type="button" class="button1" value="Submit guess ==>" onclick="guessnumber()">
+                    <input type="button" class="button2" value="↺" onclick="btntryagain()">
                 </div>
             </div>
+        </div>
+    
+        <div class="card mt-3 p-3 shadow-sm mx-auto" style="max-width: 440px; width: 100%;">
+            <h5 text-info mb-3 text-center" style="font-size: 16px; font-weight: bold;">Guess History</h5>>Guess History
+            </h5>
+            <ul id="historyList" class="list-group list-group-flush">
+            </ul>
 
-            <div class="card mt-3 p-3 shadow-sm" style="width: 300px;">
-                <h5>Guess History</h5>
-                <ul id="historyList" class="list-group list-group-flush">
-                </ul>
-
-            </div>
-        </center>
+        </div>
     </div>
-
-
 
     <hr>
 
