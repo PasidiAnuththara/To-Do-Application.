@@ -57,7 +57,7 @@ function updateHistoryUI(){
 
         for(let i=0 ; i<numberArray.length; i++){
             let li=document.createElement("li");
-            let guessnumber = numberArray[i];
+            let guessnumberVal = numberArray[i];
 
             li.innerHTML=`Round ${i + 1}: &nbsp;&nbsp;<strong>${guessnumberVal}</strong>`; 
             historyList.appendChild(li);
