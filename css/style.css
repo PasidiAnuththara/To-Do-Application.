@@ -78,21 +78,23 @@
 }
 
 #historyList {
-    list-style: none; /* Default bullet points ain karai */
-    padding: 0;
-    margin: 10px 0 0 0;
-    text-align: center; /* Center karaganna oone nam */
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 10px 0 0 0 !important;
 }
 
 #historyList li {
-    background: rgba(255, 255, 255, 0.05);
-    margin: 6px auto;
-    padding: 8px 12px;
-    width: 80%;
-    border-radius: 6px;
-    font-size: 15px;
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.04) !important;
+    margin: 8px auto !important;
+    padding: 10px 14px !important;
+    width: 90% !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    color: #dddddd !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 body {
