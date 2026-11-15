@@ -51,3 +51,10 @@
     transition: background-color 0.3s ease;
     background-color: rgb(11, 162, 221);
 }
+
+#historyList {
+    list-style: none; /* Default bullet points ain karai */
+    padding: 0;
+    margin: 10px 0 0 0;
+    text-align: center; /* Center karaganna oone nam */
+}
