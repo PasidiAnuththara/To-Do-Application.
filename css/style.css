@@ -23,26 +23,32 @@
     color: #ffffff !important;
 }
 
-.txtnumber{
-    padding: 10px 15px;
-    margin: 5px 8px 15px 0;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-    width: 180px;
+#txtnumber {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 15px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    text-align: center;
+    outline: none;
     transition: all 0.3s ease;
 }
 
-.button1{
-    color: rgb(241, 14, 230);
-    border: none;
-    padding: 10px 20px;
-    font-size: 15px;
+.button1 {
+    color: #ffffff !important;
+    border: none !important;
+    padding: 12px 20px !important;
+    font-size: 15px !important;
     font-weight: bold;
-    border-radius: 30px;
+    border-radius: 10px !important;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    background-color: rgb(66, 38, 92);
+    background: linear-gradient(135deg, #7e0fbf, #b5179e) !important;
+    box-shadow: 0 4px 15px rgba(126, 15, 191, 0.4);
+    transition: all 0.3s ease;
+    width: 78%;
 }
 
 .button2{
