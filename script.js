@@ -58,8 +58,8 @@ function updateHistoryUI(){
         for(let i=0;i<3;i++){
             let li=document.createElement("li");
             let guessnumberVal= numberArray[i]!==undefined ? numberArray[i] : "-";
-            li.innerHTML=`Round ${i + 1}: <strong>${guessValue}</strong>`; 
-            historyList.appendChild(list);
+            li.innerHTML=`Round ${i + 1}: <strong>${guessnumberVal}</strong>`; 
+            historyList.appendChild(li);
         }
     }
 }
