@@ -51,16 +51,18 @@
     width: 78%;
 }
 
-.button2{
-    color: rgb(48, 14, 241);
-    border: none;
-    padding: 10px 20px;
-    font-size: 15px;
+.button2 {
+    color: #ffffff !important;
+    border: none !important;
+    padding: 12px 18px !important;
+    font-size: 18px !important;
     font-weight: bold;
-    border-radius: 30px;
+    border-radius: 10px !important;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    background-color: rgb(66, 38, 92);
+    background: rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.3s ease;
+    width: 18%;
+    margin-left: 2%;
 }
 
 .font-weight-bold{
