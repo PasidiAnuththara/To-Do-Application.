@@ -7,7 +7,15 @@ const numberArray = [];
 
 let roundtime = 0;
 
+let isGameOver = false;
+
 function guessnumber() {
+
+    if(isGameOver){
+        alert("Game Over ! Please click the Reset (↺) button to play again.");
+        return;
+    }
+
     let userInput = Number(document.getElementById("txtnumber").value);
     
     if(!userInput || userInput < 1 || userInput > 10){
@@ -28,7 +36,8 @@ function guessnumber() {
     if (userInput === targetNumber) {
         alert("Congratulations! It is the correct number.");
         console.log("Congratulation.It is the correct Number. ");
-        btntryagain();
+        
+        isGameOver=true;
         return;
 
     } else if (userInput > targetNumber) {
@@ -43,7 +52,7 @@ function guessnumber() {
         alert(`Wrong !.You have only ${attempt} attempts left.`);
     } else {
         alert(`Game Over!No Attempts left .The correct number was :${targetNumber}`);
-        btntryagain();
+        isGameOver=true;
     }
 
     document.getElementById("txtnumber").value = "";
@@ -72,5 +81,16 @@ function updateHistoryUI(){
 //     });
 // }
 function btntryagain() {
-    location.reload();
+    targetNumber=Math.floor(Math.random() * 10) + 1;
+    console.log("New Target Number :",targetNumber);
+
+    attempt=3;
+    numberArray.length=0;
+    roundtime=0;
+    isGameOver=false;
+
+    updateHistoryUI();
+    document.getElementById("txtnumber").value="";
+    alert("Game Reset! Start your new guess..");
+    
 }
