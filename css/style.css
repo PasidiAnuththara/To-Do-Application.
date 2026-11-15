@@ -9,6 +9,11 @@
     margin-top: 20px;
 }
 
+.container {
+    max-width: 450px !important;
+    margin: 0 auto;
+}
+
 .txtnumber{
     padding: 10px 15px;
     margin: 5px 8px 15px 0;
