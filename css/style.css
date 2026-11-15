@@ -69,3 +69,15 @@
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+body {
+    background-color: #0b0c10;
+    background-image: radial-gradient(circle at 50% 10%, #1a1c29 0%, #0b0c10 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
