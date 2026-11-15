@@ -33,18 +33,6 @@ function guessnumber() {
 
     } else if (userInput > targetNumber) {
         console.log("High");
-       /* Swal.fire({
-            title: "Your number is grater than target number.Try again!",
-            width: 600,
-            padding: "3em",
-            color: "#7e0fbf",
-            background: "#ffffff url(/images/trees.png)",
-            backdrop: `
-    rgba(8, 0, 123, 0.56)
-    url("/images/nyan-cat.gif")
-    left top
-    no-repeat
-  `*/
     } else if (userInput < targetNumber) {
         console.log("Low");
     }
@@ -68,9 +56,9 @@ function updateHistoryUI(){
         historyList.innerHTML = "";
 
         for(let i=0;i<3;i++){
-            let list=document.createElement("list");
-            let guessnumber= numberArray[i]!==undefined ? randomNumber[i] : "-";
-            list.innerHTML=`Round ${i + 1}: <strong>${guessValue}</strong>`; 
+            let li=document.createElement("li");
+            let guessnumberVal= numberArray[i]!==undefined ? numberArray[i] : "-";
+            li.innerHTML=`Round ${i + 1}: <strong>${guessValue}</strong>`; 
             historyList.appendChild(list);
         }
     }
