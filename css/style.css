@@ -48,7 +48,7 @@
     background: linear-gradient(135deg, #7e0fbf, #b5179e) !important;
     box-shadow: 0 4px 15px rgba(126, 15, 191, 0.4);
     transition: all 0.3s ease;
-    width: 78%;
+    flex-grow: 1;
 }
 
 .button2 {
@@ -61,8 +61,8 @@
     cursor: pointer;
     background: rgba(255, 255, 255, 0.1) !important;
     transition: all 0.3s ease;
-    width: 18%;
-    margin-left: 2%;
+    width: 50px;
+    margin-left: 8px;
 }
 
 .font-weight-bold{
